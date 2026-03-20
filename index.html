@@ -1,0 +1,562 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Berlanga | Art Portfolio</title>
+    <meta name="description" content="Portafolio oficial y galería de arte de José Berlanga (SevenArt).">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="#hero" data-i18n="nav_logo">jose berlanga</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="#about" data-i18n="nav_about">Sobre Mí</a></li>
+                <li><a href="#gallery" data-i18n="nav_gallery">Galería</a></li>
+                <li><a href="#shop" data-i18n="nav_shop">Tienda</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
+            </ul>
+            <div class="lang-switch">
+                <button id="btn-es" class="active">ES</button>
+                <button id="btn-en">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCIÓN: PORTADA (HERO) -->
+        <section id="hero" class="hero-section">
+            <img src="portada_portfolio.png" alt="Portada Portfolio" class="hero-image"
+                onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%22400%22%20viewBox%3D%220%200%20800%20400%22%3E%3Crect%20fill%3D%22%23f9f9f9%22%20width%3D%22800%22%20height%3D%22400%22%2F%3E%3Ctext%20fill%3D%22%23cccccc%22%20font-family%3D%22Arial%22%20font-size%3D%2220%22%20x%3D%2250%25%22%20y%3D%2250%25%22%20text-anchor%3D%22middle%22%3Eportada_portfolio.png%3C%2Ftext%3E%3C%2Fsvg%3E'">
+        </section>
+
+        <!-- SECCIÓN: SOBRE MÍ -->
+        <section id="about" class="section">
+            <h2 data-i18n="about_title">Sobre Mí</h2>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="retratoBERLAN.jpg" alt="Retrato de José Berlanga" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <p data-i18n="about_p1">"Soy Jose Berlanga, pintor de Málaga de formación autodidacta, y mi trabajo
+                        explora el color, la luz, las formas, la interactuación entre ellas y la perfección simbólica
+                        del número 7, siendo este número no una simple cifra, sino el hilo conductor que teje la
+                        narrativa de casi toda mi obra. Utilizo principalmente la técnica del óleo, la acuarela y el
+                        dibujo para crear imágenes que inviten a la curiosidad, exploración, descubrimiento y la
+                        contemplación."</p>
+                    <div class="about-quote">
+                        <p data-i18n="about_quote_1">"Si formamos en nuestra imaginación una representación icónica de
+                            la vida, esquematizada y de alguna manera diagramática, si podemos visualizar
+                            geométricamente estos símbolos y tratamos de aplicar diversas fórmulas o reglas de relación
+                            entre ellos, habremos creado, de algún modo, un universo gobernado por criterios más o menos
+                            coherentes, pero siempre a merced del autor.</p>
+                        <p data-i18n="about_quote_2">Expresiones figurativas y abstractas, sujetas, unas a la
+                            numerología (serie de 7 elementos o seven art), y otras al equilibrio y distribución dentro
+                            de un espacio cerrado configurado y enmarcado.</p>
+                        <p data-i18n="about_quote_3">Los diagramas se transforman y relacionan de diversos modos,
+                            buscando en ocasiones la simplicidad, el guiño o la iluminación, pero siempre con la
+                            intersección como parte fundamental del juego y el diálogo."</p>
+                    </div>
+                    <img src="FIRMABERLANGA.png" alt="Firma José Berlanga" class="about-signature" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: GALERÍA -->
+        <section id="gallery" class="section">
+            <h2 data-i18n="gallery_title">Galería</h2>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Todas</button>
+                <button class="filter-btn" data-filter="expo1" data-i18n="filter_expo1">Mira el pajarito</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/ABEJARUCO.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">abejaruco</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/AGUILA%20CALVA.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">aguila calva</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/AGUILA%20REAL.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">aguila real</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/AGUILUCHO.jpg" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">aguilucho</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/ATUKA.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">atuka</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/AZULEJO.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">azulejo</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/BUHO.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">buho</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/CARDENALILLO.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">cardenalillo</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/CIGUEÑA.jpg" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">cigueña</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/COLORES.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">colores</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/COLORIN.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">colorin</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/DIAMANTE%20MANDARIN.jpg"
+                        loading="lazy" alt="Obra">
+                    <p class="gallery-title">diamante mandarin</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/EMPERADOR.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">emperador</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/FLAMENCO.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">flamenco</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/GALLITO.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">gallito</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/GALLO.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">gallo</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/GARZA.jpg" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">garza</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/GORRION.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">gorrion</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/GUACAMAR.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">guacamar</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/GUACAMAYOS.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">guacamayos</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/JILGUERO.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">jilguero</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/LA%20MIRADA%20DEL%20MARTIN.JPG"
+                        loading="lazy" alt="Obra">
+                    <p class="gallery-title">la mirada del martin</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/LORITO.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">lorito</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/MARTIN%20PESCADOR.JPG"
+                        loading="lazy" alt="Obra">
+                    <p class="gallery-title">martin pescador</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/PALOMA.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">paloma</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/PAPAGALLO.jpg" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">papagallo</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/PERDIZ.jpg" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">perdiz</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/PETIRROJO.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">petirrojo</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/PICOANCHO.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">picoancho</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/TUCAN.JPG" loading="lazy"
+                        alt="Obra">
+                    <p class="gallery-title">tucan</p>
+                </div>
+                <div class="gallery-item expo1"><img
+                        src="IMAGENES%20PAGINA%20WEB/Galeria/01_Mira%20el%20pajarito/TUKANA%20SEPIIDA.JPG"
+                        loading="lazy" alt="Obra">
+                    <p class="gallery-title">tukana sepiida</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: TIENDA -->
+        <section id="shop" class="section">
+            <h2 data-i18n="shop_title">Catálogo / Obras Disponibles</h2>
+
+            <div class="shop-grid">
+
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img
+                            src="IMAGENES%20PAGINA%20WEB/Tienda/280_ABEJARUCO/ABEJARUCO.JPG" loading="lazy"
+                            alt="ABEJARUCO"></div>
+                    <div class="shop-info">
+                        <h3 data-name="abejaruco" data-i18n="shop_item_1">abejaruco</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img
+                            src="IMAGENES%20PAGINA%20WEB/Tienda/280_AGUILA%20CALVA/AGUILA%20CALVA.JPG" loading="lazy"
+                            alt="AGUILA CALVA"></div>
+                    <div class="shop-info">
+                        <h3 data-name="aguila calva" data-i18n="shop_item_2">aguila calva</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img
+                            src="IMAGENES%20PAGINA%20WEB/Tienda/280_AGUILA%20REAL/AGUILA%20REAL.JPG" loading="lazy"
+                            alt="AGUILA REAL"></div>
+                    <div class="shop-info">
+                        <h3 data-name="aguila real" data-i18n="shop_item_3">aguila real</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img
+                            src="IMAGENES%20PAGINA%20WEB/Tienda/280_AGUILUCHO/AGUILUCHO.jpg" loading="lazy"
+                            alt="AGUILUCHO"></div>
+                    <div class="shop-info">
+                        <h3 data-name="aguilucho" data-i18n="shop_item_4">aguilucho</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_ATUKA/AGUILUCHO.jpg"
+                            loading="lazy" alt="ATUKA"></div>
+                    <div class="shop-info">
+                        <h3 data-name="atuka" data-i18n="shop_item_5">atuka</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_AZULEJO/AZULEJO.JPG"
+                            loading="lazy" alt="AZULEJO"></div>
+                    <div class="shop-info">
+                        <h3 data-name="azulejo" data-i18n="shop_item_6">azulejo</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_BUHO/BUHO.JPG"
+                            loading="lazy" alt="BUHO"></div>
+                    <div class="shop-info">
+                        <h3 data-name="buho" data-i18n="shop_item_7">buho</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img
+                            src="IMAGENES%20PAGINA%20WEB/Tienda/280_CARDENALILLO/CARDENALILLO.JPG" loading="lazy"
+                            alt="CARDENALILLO"></div>
+                    <div class="shop-info">
+                        <h3 data-name="cardenalillo" data-i18n="shop_item_8">cardenalillo</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_CIGUEÑA/CIGUEÑA.jpg"
+                            loading="lazy" alt="CIGUEÑA"></div>
+                    <div class="shop-info">
+                        <h3 data-name="cigueña" data-i18n="shop_item_9">cigueña</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_COLORES/COLORES.JPG"
+                            loading="lazy" alt="COLORES"></div>
+                    <div class="shop-info">
+                        <h3 data-name="colores" data-i18n="shop_item_10">colores</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_COLORIN/COLORIN.JPG"
+                            loading="lazy" alt="COLORIN"></div>
+                    <div class="shop-info">
+                        <h3 data-name="colorin" data-i18n="shop_item_11">colorin</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_FLAMENCO/FLAMENCO.JPG"
+                            loading="lazy" alt="FLAMENCO"></div>
+                    <div class="shop-info">
+                        <h3 data-name="flamenco" data-i18n="shop_item_12">flamenco</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_GALLITO/GALLITO.JPG"
+                            loading="lazy" alt="GALLITO"></div>
+                    <div class="shop-info">
+                        <h3 data-name="gallito" data-i18n="shop_item_13">gallito</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_GALLO/GALLO.JPG"
+                            loading="lazy" alt="GALLO"></div>
+                    <div class="shop-info">
+                        <h3 data-name="gallo" data-i18n="shop_item_14">gallo</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_GARZA/GARZA.jpg"
+                            loading="lazy" alt="GARZA"></div>
+                    <div class="shop-info">
+                        <h3 data-name="garza" data-i18n="shop_item_15">garza</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_GORRION/GORRION.JPG"
+                            loading="lazy" alt="GORRION"></div>
+                    <div class="shop-info">
+                        <h3 data-name="gorrion" data-i18n="shop_item_16">gorrion</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img
+                            src="IMAGENES%20PAGINA%20WEB/Tienda/280_GUACAMAYOS/GUACAMAYOS.JPG" loading="lazy"
+                            alt="GUACAMAYOS"></div>
+                    <div class="shop-info">
+                        <h3 data-name="guacamayos" data-i18n="shop_item_17">guacamayos</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_JILGUERO/JILGUERO.JPG"
+                            loading="lazy" alt="JILGUERO"></div>
+                    <div class="shop-info">
+                        <h3 data-name="jilguero" data-i18n="shop_item_18">jilguero</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_LORITO/LORITO.JPG"
+                            loading="lazy" alt="LORITO"></div>
+                    <div class="shop-info">
+                        <h3 data-name="lorito" data-i18n="shop_item_19">lorito</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img
+                            src="IMAGENES%20PAGINA%20WEB/Tienda/280_MARTIN%20PESCADOR/MARTIN%20PESCADOR.JPG"
+                            loading="lazy" alt="MARTIN PESCADOR"></div>
+                    <div class="shop-info">
+                        <h3 data-name="martin pescador" data-i18n="shop_item_20">martin pescador</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_PALOMA/PALOMA.JPG"
+                            loading="lazy" alt="PALOMA"></div>
+                    <div class="shop-info">
+                        <h3 data-name="paloma" data-i18n="shop_item_21">paloma</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_PERDIZ/PERDIZ.jpg"
+                            loading="lazy" alt="PERDIZ"></div>
+                    <div class="shop-info">
+                        <h3 data-name="perdiz" data-i18n="shop_item_22">perdiz</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img
+                            src="IMAGENES%20PAGINA%20WEB/Tienda/280_PICOANCHO/PICOANCHO.JPG" loading="lazy"
+                            alt="PICOANCHO"></div>
+                    <div class="shop-info">
+                        <h3 data-name="picoancho" data-i18n="shop_item_23">picoancho</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_TUCAN/TUCAN.JPG"
+                            loading="lazy" alt="TUCAN"></div>
+                    <div class="shop-info">
+                        <h3 data-name="tucan" data-i18n="shop_item_24">tucan</h3>
+                        <p class="price">€280</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img
+                            src="IMAGENES%20PAGINA%20WEB/Tienda/350_LA%20MIRADA%20DEL%20MARTIN/LA%20MIRADA%20DEL%20MARTIN.JPG"
+                            loading="lazy" alt="LA MIRADA DEL MARTIN"></div>
+                    <div class="shop-info">
+                        <h3 data-name="la mirada del martin" data-i18n="shop_item_25">la mirada del martin</h3>
+                        <p class="price">€350</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img
+                            src="IMAGENES%20PAGINA%20WEB/Tienda/490_TUKANA%20SEPIIDA/TUKANA%20SEPIIDA.JPG"
+                            loading="lazy" alt="TUKANA SEPIIDA"></div>
+                    <div class="shop-info">
+                        <h3 data-name="tukana sepiida" data-i18n="shop_item_26">tukana sepiida</h3>
+                        <p class="price">€490</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img
+                            src="IMAGENES%20PAGINA%20WEB/Tienda/630_EMPERADOR/EMPERADOR.JPG" loading="lazy"
+                            alt="EMPERADOR"></div>
+                    <div class="shop-info">
+                        <h3 data-name="emperador" data-i18n="shop_item_27">emperador</h3>
+                        <p class="price">€630</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img
+                            src="IMAGENES%20PAGINA%20WEB/Tienda/630_PAPAGALLO/PAPAGALLO.jpg" loading="lazy"
+                            alt="PAPAGALLO"></div>
+                    <div class="shop-info">
+                        <h3 data-name="papagallo" data-i18n="shop_item_28">papagallo</h3>
+                        <p class="price">€630</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/910_GUACAMAR/GUACAMAR.JPG"
+                            loading="lazy" alt="GUACAMAR"></div>
+                    <div class="shop-info">
+                        <h3 data-name="guacamar" data-i18n="shop_item_29">guacamar</h3>
+                        <p class="price">€910</p><button class="btn-interest" data-i18n="btn_interest">Me
+                            interesa</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN: CONTACTO -->
+        <section id="contact" class="section">
+            <h2 data-i18n="contact_title">Contacto</h2>
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form"
+                    onsubmit="event.preventDefault(); alert('Formulario enviado.');">
+                    <div class="form-group">
+                        <label for="name" data-i18n="label_name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="label_email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-i18n="label_subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="label_message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit" data-i18n="btn_send">Enviar Mensaje</button>
+                </form>
+
+                <div class="social-links">
+                    <a href="https://www.instagram.com/berlangarte/" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> José Berlanga | SevenArt. <span data-i18n="footer_rights">Todos los derechos
+                reservados.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
