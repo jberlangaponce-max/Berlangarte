@@ -1,4 +1,4 @@
-﻿// ==========================================
+// ==========================================
 // 1. DICCIONARIO DE TRADUCCIONES (i18n)
 // ==========================================
 
@@ -243,13 +243,106 @@ function setupLogoVisibility() {
 }
 
 // ==========================================
-// 5. INICIALIZACIÓN GENERAL
+// 5. MODAL GALERÍA Y DATOS DE OBRAS
+// ==========================================
+const artworkData = {
+    "abejaruco": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "aguila calva": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "aguila real": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "aguilucho": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "atuka": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "azulejo": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "buho": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "cardenalillo": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "cigueña": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "colores": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "colorin": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "diamante mandarin": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "emperador": { technique: "Óleo sobre tabla", dim: "100 x 81" },
+    "flamenco": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "gallito": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "gallo": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "garza": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "gorrion": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "guacamar": { technique: "Óleo sobre tabla", dim: "100 x 81" },
+    "guacamayos": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "jilguero": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "la mirada del martin": { technique: "Óleo sobre tabla", dim: "55 x 25" },
+    "lorito": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "martin pescador": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "paloma": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "papagallo": { technique: "Óleo sobre tabla", dim: "100 x 81" },
+    "perdiz": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "petirrojo": { technique: "Óleo sobre tabla", dim: "100 x 81" },
+    "picoancho": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "tucan": { technique: "Óleo sobre tabla", dim: "38 x 55" },
+    "tukana sepiida": { technique: "Óleo sobre tabla", dim: "60 x 100" }
+};
+
+function setupGalleryModal() {
+    const modal = document.getElementById('gallery-modal');
+    if (!modal) return;
+    
+    const modalImg = document.getElementById('modal-img');
+    const modalTitle = document.getElementById('modal-title');
+    const modalTech = document.getElementById('modal-tech');
+    const modalDim = document.getElementById('modal-dim');
+    const closeBtn = document.querySelector('.close-modal');
+
+    document.querySelectorAll('.gallery-item img').forEach(img => {
+        img.style.cursor = 'pointer';
+        img.title = "Click para expandir";
+        
+        img.addEventListener('click', function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+
+            const nameEl = this.nextElementSibling;
+            let name = nameEl ? nameEl.textContent.trim() : "";
+            
+            modalTitle.textContent = name;
+            
+            let details = artworkData[name.toLowerCase()] || artworkData[name.toLowerCase().replace("ü","u")] || null;
+            
+            if (details) {
+                let isEn = document.getElementById('btn-en').classList.contains('active');
+                let techStr = isEn ? "Technique" : "Técnica";
+                let dimStr = isEn ? "Dimensions" : "Dimensiones";
+                
+                let techName = details.technique;
+                if (isEn && techName.includes("Óleo sobre tabla")) {
+                    techName = "Oil on panel";
+                }
+                
+                modalTech.textContent = `${techStr}: ${techName}`;
+                modalDim.textContent = `${dimStr}: ${details.dim} cm`;
+            } else {
+                modalTech.textContent = "";
+                modalDim.textContent = "";
+            }
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = "none";
+    });
+
+    modal.addEventListener('click', (e) => {
+        if(e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+}
+
+// ==========================================
+// 6. INICIALIZACIÓN GENERAL
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
     changeLanguage('es');
     setupGalleryFilters();
     setupShopInterestButtons();
     setupLogoVisibility();
+    setupGalleryModal();
 
     const yearSpan = document.getElementById('year');
     if (yearSpan) {

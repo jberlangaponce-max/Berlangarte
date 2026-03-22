@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -283,7 +283,7 @@
                     </div>
                 </div>
                 <div class="shop-item">
-                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_ATUKA/AGUILUCHO.jpg"
+                    <div class="shop-images-scroll"><img src="IMAGENES%20PAGINA%20WEB/Tienda/280_ATUKA/ATUKA.JPG"
                             loading="lazy" alt="ATUKA"></div>
                     <div class="shop-info">
                         <h3 data-name="atuka" data-i18n="shop_item_5">atuka</h3>
@@ -523,8 +523,7 @@
         <section id="contact" class="section">
             <h2 data-i18n="contact_title">Contacto</h2>
             <div class="contact-container">
-                <form id="contact-form" class="contact-form"
-                    onsubmit="event.preventDefault(); alert('Formulario enviado.');">
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/xzdjqlvl" method="POST">
                     <div class="form-group">
                         <label for="name" data-i18n="label_name">Nombre</label>
                         <input type="text" id="name" name="name" required>
@@ -555,6 +554,17 @@
         <p>&copy; <span id="year"></span> José Berlanga | SevenArt. <span data-i18n="footer_rights">Todos los derechos
                 reservados.</span></p>
     </footer>
+
+    <!-- MODAL GALERÍA -->
+    <div id="gallery-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img" alt="Detalle de obra">
+        <div id="modal-caption">
+            <h3 id="modal-title"></h3>
+            <p id="modal-tech"></p>
+            <p id="modal-dim"></p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
