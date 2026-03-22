@@ -295,7 +295,9 @@ function setupGalleryModal() {
         
         img.addEventListener('click', function() {
             modal.style.display = "block";
-            modalImg.src = this.src;
+            // Usa la imagen original de alta resolución si está disponible
+            const fullSrc = this.dataset.fullSrc || this.src;
+            modalImg.src = fullSrc;
 
             const nameEl = this.nextElementSibling;
             let name = nameEl ? nameEl.textContent.trim() : "";
