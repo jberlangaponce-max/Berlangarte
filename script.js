@@ -52,7 +52,7 @@ const translations = {
         shop_item_25: "la mirada del martin",
         shop_item_26: "tukana sepiida",
         shop_item_27: "emperador",
-        shop_item_28: "papagallo",
+        shop_item_28: "papagayo",
         shop_item_29: "guacamar",
 
         btn_interest: "Me interesa",
@@ -115,7 +115,7 @@ const translations = {
         shop_item_25: "la mirada del martin",
         shop_item_26: "tukana sepiida",
         shop_item_27: "emperador",
-        shop_item_28: "papagallo",
+        shop_item_28: "papagayo",
         shop_item_29: "guacamar",
 
         btn_interest: "I am interested",
@@ -271,7 +271,7 @@ const artworkData = {
     "lorito": { technique: "Óleo sobre tabla", dim: "38 x 55" },
     "martin pescador": { technique: "Óleo sobre tabla", dim: "38 x 55" },
     "paloma": { technique: "Óleo sobre tabla", dim: "38 x 55" },
-    "papagallo": { technique: "Óleo sobre tabla", dim: "100 x 81" },
+    "papagayo": { technique: "Óleo sobre tabla", dim: "100 x 81" },
     "perdiz": { technique: "Óleo sobre tabla", dim: "38 x 55" },
     "petirrojo": { technique: "Óleo sobre tabla", dim: "100 x 81" },
     "picoancho": { technique: "Óleo sobre tabla", dim: "38 x 55" },
